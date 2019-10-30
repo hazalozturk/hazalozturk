@@ -19,7 +19,7 @@
 
       <v-flex xs8>
         <v-img
-          :src="require('../assets/self.png')"
+          :src="require('../assets/art-dev-design.png')"
           class="float-right"
           contain
           height="400"
