@@ -2,17 +2,19 @@
         <v-list flat color="transparent" max-width="150px">
             <v-list-item-group >
                 <v-list-item
+                    color="transparent"
                     v-for="(sub, i) in menu"
                     :key="i"
                 >
                     <v-list-item-icon>
                         <v-btn
                             dark
-                            color="#FFB997"
+                            color="#EC7580"
                             font="white"
                             class="subheading mx-3"
                             target="_blank"
                             elevation="20"
+                            x-large
                         >
                             {{ sub.title }}
                         </v-btn>

@@ -1,34 +1,41 @@
 <template>
-  <v-container fluid>
-    <v-layout
-      row
-    >
-      <v-flex xs12 mb-4>
-        <h1 class="display-4 font-weight-bold py-9 mb-12 ml-12 pl-12 float-left">
-          Hazal Ozturk
-        </h1>
+  <v-container fluid pt-0>
+    <v-layout row>
+      <v-flex xs10>
+        <v-layout
+          row
+        >
+          <v-flex xs10 mx-9>
+            <v-img
+              :src="require('../assets/name.png')"
+              class="float-left"
+              contain
+              width="800"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+
+        <v-layout
+          row
+        >
+          <v-flex xs2 pl-9>
+            <sidebarMenu/>
+          </v-flex>
+
+          <v-flex xs10>
+            <v-img
+              :src="require('../assets/art-dev-design.png')"
+              class="float-right"
+              contain
+              height="400"
+            ></v-img>
+          </v-flex>
+
+        </v-layout>
       </v-flex>
+
+      <v-flex xs2 align-self-end><socialLink/></v-flex>
     </v-layout>
-
-    <v-layout
-      row
-    >
-      <v-flex xs2>
-        <sidebarMenu/>
-      </v-flex>
-
-      <v-flex xs8>
-        <v-img
-          :src="require('../assets/art-dev-design.png')"
-          class="float-right"
-          contain
-          height="400"
-        ></v-img>
-      </v-flex>
-
-      <v-flex xs2><socialLink/></v-flex>
-    </v-layout>
-    
   </v-container>
 </template>
 
