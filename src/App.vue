@@ -1,21 +1,21 @@
 <template>
   <v-app>
     <v-content>
-      <homePage/>
+      <homePage />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import homePage from './components/homePage'
+import homePage from "./components/homePage";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    homePage,
+    homePage
   },
   data: () => ({
     //
-  }),
+  })
 };
 </script>
