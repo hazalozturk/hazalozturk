@@ -22,7 +22,7 @@
           <v-flex xs12 sm10 md10>
             <v-img
               :src="require('../assets/art-dev-design.png')"
-              class="float-right home-image"
+              class="float-right"
               contain
               height="400"
               alt="female illustration"
@@ -31,10 +31,18 @@
         </v-layout>
       </v-flex>
 
-      <v-flex xs2 align-self-sm-end><socialLink /></v-flex>
+      <v-flex xs2 align-self-sm-end class="social-link-list"><socialLink /></v-flex>
     </v-layout>
   </v-container>
 </template>
+
+<style>
+@media only screen and (max-width: 600px) {
+  .social-link-list {
+    padding-top: 30%;
+  }
+}
+</style>
 
 <script>
 import socialLink from "./socialLink";
