@@ -3,12 +3,12 @@
     <v-layout row>
       <v-flex xs10>
         <v-layout row>
-          <v-flex xs10 mx-9>
+          <v-flex xs10 mx-9 pl-sm-5>
             <v-img
               :src="require('../assets/name.png?lazy')"
-              class="float-left"
+              class="float-left name-image"
               contain
-              width="800"
+              width="650"
               alt="Hazal Ozturk name with a irregular shaped background"
             ></v-img>
           </v-flex>
@@ -21,10 +21,10 @@
 
           <v-flex xs12 sm10 md10>
             <v-img
-              :src="require('../assets/art-dev-design.png')"
+              :src="require('../assets/art-dev-design.png?lazy')"
               class="float-right"
               contain
-              height="400"
+              height="300"
               alt="female illustration"
             ></v-img>
           </v-flex>
@@ -40,6 +40,10 @@
 @media only screen and (max-width: 600px) {
   .social-link-list {
     padding-top: 30%;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .name-image {
   }
 }
 </style>
