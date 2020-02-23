@@ -4,22 +4,24 @@ import vuetify from './plugins/vuetify';
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
 import VueRouter from 'vue-router';
+const aboutPage = () => import('@/components/aboutPage');
+const skillsPage = () => import('@/components/skillsPage');
+const homePage = () => import('@/components/homePage');
+
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
-const aboutPage = { template: '<aboutPage />' }
-const skillsPage = { template: '<skillsPage />' }
-
 const routes = [
-  { path: '/about', name: 'about', component: aboutPage },
-  { path: '/skills', name: 'skills', component: skillsPage }
-]
+  { path: '/', component: homePage },
+  { path: '/about', component: aboutPage },
+  { path: '/skills', component: skillsPage }
+];
 
 const router = new VueRouter({
   mode: 'history',
-  routes // short for `routes: routes`
-})
+  routes
+});
 
 new Vue({
   vuetify,

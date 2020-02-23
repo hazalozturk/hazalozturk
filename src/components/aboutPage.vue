@@ -1,14 +1,55 @@
 <template>
-    <v-container fluid pt-10>
-        About
-    </v-container>
+  <v-container fluid pt-0>
+    <v-layout row>
+      <v-flex xs10>
+        <v-layout row>
+          <v-flex xs10 mx-9 pl-sm-5>
+            <v-img
+              :src="require('../assets/name.png?lazy')"
+              class="float-left name-image"
+              contain
+              width="650"
+              alt="Hazal Ozturk name with a irregular shaped background"
+            ></v-img>
+          </v-flex>
+        </v-layout>
+
+        <v-layout row>
+          <v-flex xs5 sm2 md2 pl-9>
+            <sidebarMenu />
+          </v-flex>
+
+          <v-flex xs12 sm10 md10 pl-12 pr-9>
+            <blockquote class="blockquote">
+                What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.
+            </blockquote>
+          </v-flex>
+        </v-layout>
+      </v-flex>
+
+      <v-flex xs2 align-self-sm-end class="social-link-list"><socialLink /></v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
+import socialLink from "./socialLink";
+import sidebarMenu from "./sidebarMenu";
 
 export default {
-  name: "aboutPage",
-  components: {},
+  name: "AboutPage",
+  components: {
+    socialLink,
+    sidebarMenu
+  },
   data: () => ({})
 };
 </script>
