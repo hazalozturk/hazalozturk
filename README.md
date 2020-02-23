@@ -1,4 +1,6 @@
-# hazal-ozturk
+# Personal Website - Hazal Ozturk
+
+![End-to-end tests](https://github.com/hazalozturk/hazalozturk/workflows/End-to-end%20tests/badge.svg?branch=master)
 
 ## Project setup
 ```
@@ -19,9 +21,6 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Run cypress integration tests
 ```
