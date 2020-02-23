@@ -3,11 +3,27 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import * as Sentry from '@sentry/browser';
 import * as Integrations from '@sentry/integrations';
+import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false
+Vue.use(VueRouter)
+
+const aboutPage = { template: '<aboutPage />' }
+const skillsPage = { template: '<skillsPage />' }
+
+const routes = [
+  { path: '/about', name: 'about', component: aboutPage },
+  { path: '/skills', name: 'skills', component: skillsPage }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  routes // short for `routes: routes`
+})
 
 new Vue({
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
 
