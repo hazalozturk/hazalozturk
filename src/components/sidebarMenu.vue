@@ -8,7 +8,7 @@
                 dark
                 color="#EC7580"
                 font="white"
-                class="subheading mx-3"
+                class="subheading mx-3 px-3"
                 target="_blank"
                 elevation="20"
                 x-large
