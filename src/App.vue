@@ -1,18 +1,16 @@
 <template>
   <v-app>
     <v-content>
-      <homePage />
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import homePage from "./components/homePage";
 
 export default {
   name: "App",
   components: {
-    homePage
   },
   data: () => ({
     //

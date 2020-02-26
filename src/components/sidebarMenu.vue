@@ -3,12 +3,12 @@
     <v-list-item-group>
       <v-list-item color="transparent" v-for="(sub, i) in menu" :key="i">
         <v-list-item-icon>
-          <router-link :to="sub.href" tag="v-btn">
+          <router-link :to="sub.href">
               <v-btn
                 dark
                 color="#EC7580"
                 font="white"
-                class="subheading mx-3"
+                class="subheading mx-3 px-3"
                 target="_blank"
                 elevation="20"
                 x-large
@@ -22,6 +22,11 @@
   </v-list>
 </template>
 
+<style>
+div a {
+    text-decoration: none;
+}
+</style>
 <script>
 export default {
   name: "sidebarMenu",
