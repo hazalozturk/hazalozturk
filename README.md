@@ -1,4 +1,5 @@
 # Personal Website - Hazal Ozturk
+[hazalozturk.info](https://hazalozturk.info/)
 
 ![End-to-end tests](https://github.com/hazalozturk/hazalozturk/workflows/End-to-end%20tests/badge.svg?branch=master)
 
