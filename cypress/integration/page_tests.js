@@ -1,6 +1,6 @@
 const pages = ["Home", "About", "Skills"];
-const links = ["mdi-github-circle", "mdi-linkedin", "mdi-twitter-circle",
-               "mdi-dribbble", "mdi-codepen", "mdi-instagram", 
+const links = ["mdi-github", "mdi-linkedin", "mdi-twitter",
+               "mdi-pencil", "mdi-codepen", "mdi-instagram", 
                "mdi-camera"]
 
 describe('Home Page Tests', function() {
