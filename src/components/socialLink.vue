@@ -30,7 +30,7 @@ export default {
   data: () => ({
     icons: [
       {
-        title: "github-circle",
+        title: "github",
         href: "https://github.com/hazalozturk"
       },
       {
@@ -38,11 +38,11 @@ export default {
         href: "https://www.linkedin.com/in/hazalcanisagozturk/"
       },
       {
-        title: "twitter-circle",
+        title: "twitter",
         href: "https://twitter.com/HazalOz92600198"
       },
       {
-        title: "dribbble",
+        title: "pencil",
         href: "https://dribbble.com/hazalozturk"
       },
       {
