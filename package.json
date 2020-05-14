@@ -13,7 +13,7 @@
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
     "vue-router": "^3.1.5",
-    "vuetify": "^2.1.0"
+    "vuetify": "^2.2.28"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
@@ -21,9 +21,9 @@
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.3",
     "cypress": "^4.0.2",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "eslint-plugin-vue": "^6.2.1",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
     "sass": "^1.23.1",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "^2.0.5",
