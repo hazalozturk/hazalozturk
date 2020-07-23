@@ -4,19 +4,20 @@
       <v-list-item color="transparent" v-for="(sub, i) in menu" :key="i">
         <v-list-item-icon>
           <router-link :to="sub.href">
-              <v-btn
-                dark
-                color="#EC7580"
-                font="white"
-                class="subheading mx-3 px-3"
-                target="_blank"
-                elevation="20"
-                x-large
-              >
+            <v-btn
+              dark
+              color="#EC7580"
+              font="white"
+              class="subheading mx-3 px-3"
+              target="_blank"
+              elevation="20"
+              x-large
+            >
               {{ sub.title }}
             </v-btn>
           </router-link>
         </v-list-item-icon>
+        <v-list-item-action-text></v-list-item-action-text>
       </v-list-item>
     </v-list-item-group>
   </v-list>
@@ -24,7 +25,7 @@
 
 <style>
 div a {
-    text-decoration: none;
+  text-decoration: none;
 }
 </style>
 <script>
@@ -34,17 +35,17 @@ export default {
     menu: [
       {
         title: "Home",
-        href: "/"
+        href: "/",
       },
       {
         title: "About",
-        href: "/about"
+        href: "/about",
       },
       {
         title: "Skills",
-        href: "/skills"
-      }
-    ]
-  })
+        href: "/skills",
+      },
+    ],
+  }),
 };
 </script>
