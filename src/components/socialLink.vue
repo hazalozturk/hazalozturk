@@ -18,6 +18,7 @@
               <v-icon>mdi-{{ icon.title }}</v-icon>
             </v-btn>
           </v-list-item-icon>
+          <v-list-item-action-text></v-list-item-action-text>
         </v-list-item>
       </v-list-item-group>
     </v-list>
@@ -31,33 +32,33 @@ export default {
     icons: [
       {
         title: "github",
-        href: "https://github.com/hazalozturk"
+        href: "https://github.com/hazalozturk",
       },
       {
         title: "linkedin",
-        href: "https://www.linkedin.com/in/hazalcanisagozturk/"
+        href: "https://www.linkedin.com/in/hazalcanisagozturk/",
       },
       {
         title: "twitter",
-        href: "https://twitter.com/HazalOz92600198"
+        href: "https://twitter.com/HazalOz92600198",
       },
       {
         title: "pencil",
-        href: "https://dribbble.com/hazalozturk"
+        href: "https://dribbble.com/hazalozturk",
       },
       {
         title: "codepen",
-        href: "https://codepen.io/hozturk"
+        href: "https://codepen.io/hozturk",
       },
       {
         title: "instagram",
-        href: "https://www.instagram.com/artbyhazal/?hl=en"
+        href: "https://www.instagram.com/artbyhazal/?hl=en",
       },
       {
         title: "camera",
-        href: "https://www.gurushots.com/hcanisag/photos"
-      }
-    ]
-  })
+        href: "https://www.gurushots.com/hcanisag/photos",
+      },
+    ],
+  }),
 };
 </script>
