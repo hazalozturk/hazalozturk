@@ -18,16 +18,18 @@
           <v-flex xs5 sm2 md2 pl-9>
             <sidebarMenu />
           </v-flex>
-
-          <v-flex xs12 sm10 md10 pl-12 pr-9>
+          <v-flex xs12 sm10 md10 pl-12 pr-9 pt-5>
+            <h1>Developer. Designer.<span class="artist"> Artist.</span></h1>
             <blockquote class="blockquote">
-              Work In Progress . . .  Please check back later . . .
+              Please check back later for more info . . .
             </blockquote>
           </v-flex>
         </v-layout>
       </v-flex>
 
-      <v-flex xs2 align-self-sm-end class="social-link-list"><socialLink /></v-flex>
+      <v-flex xs2 align-self-sm-end class="social-link-list"
+        ><socialLink
+      /></v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -40,8 +42,14 @@ export default {
   name: "AboutPage",
   components: {
     socialLink,
-    sidebarMenu
+    sidebarMenu,
   },
-  data: () => ({})
+  data: () => ({}),
 };
 </script>
+
+<style>
+.artist {
+  font-family: "Shadows Into Light", cursive;
+}
+</style>
