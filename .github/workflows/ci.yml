@@ -7,6 +7,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Install dependencies
+        run: yarn Install
+
       - name: Run linter
         run: yarn lint
 
