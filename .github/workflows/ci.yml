@@ -1,6 +1,15 @@
 name: End-to-end tests
 on: [push]
 jobs:
+  lint-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Run linter
+        run: yarn lint
+
   cypress-run:
     runs-on: ubuntu-latest
     steps:
