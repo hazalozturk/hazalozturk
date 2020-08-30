@@ -3,7 +3,7 @@
     <blockquote class="blockquote">
       <h1>My Expertise:</h1>
       <v-row align="center" v-for="(skill, index) in skills" :key="index">
-        <v-col md="1" sm="3"
+        <v-col lg="1" md="2" sm="3"
           ><v-progress-circular
             :size="50"
             :value="skill.percent"
@@ -11,7 +11,7 @@
             >%{{ skill.percent }}</v-progress-circular
           ></v-col
         >
-        <v-col md="11" sm="9">{{ skill.title }}</v-col>
+        <v-col lg="11" md="10" sm="9">{{ skill.title }}</v-col>
       </v-row>
     </blockquote>
   </v-flex>
