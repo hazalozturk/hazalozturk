@@ -24,27 +24,25 @@ export default {
     skills: [
       {
         title: "CSS, HTML, JS, Responsive Web Design, Mobile App Development",
-        color: "#2e8540",
+        color: "#095c43",
         percent: 95,
       },
       {
         title: "Git, NodeJS, Webpack, React, React Native, Vue, Wordpress, Figma",
-        color: "#004bad",
+        color: "#8a390d",
         percent: 75,
       },
       {
         title: "Docker, Laravel, Sentry, Github Actions, UI/UX Design",
-        color: "#DB6434",
+        color: "#375d87",
         percent: 35,
       },
       {
         title: "Animejs, SVG Animations",
-        color: "#5b616b",
+        color: "#5c626d",
         percent: 15,
       },
     ],
   }),
 };
 </script>
-
-<style></style>
