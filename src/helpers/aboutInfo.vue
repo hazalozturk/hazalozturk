@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 sm10 md10 pl-12 pr-9 pt-5>
+  <v-flex xs12 sm10 md10 pl-15 pr-9 pt-5>
     <blockquote class="blockquote">
       <h1>Hi, I’m Hazal.</h1>
       <h2>Developer. Designer.<span class="artist"> Artist.</span></h2>
