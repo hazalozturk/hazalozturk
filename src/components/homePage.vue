@@ -42,10 +42,6 @@
     padding-top: 30%;
   }
 }
-@media only screen and (orientation: landscape) {
-  .name-image {
-  }
-}
 </style>
 
 <script>
