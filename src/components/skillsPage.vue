@@ -18,16 +18,18 @@
           <v-flex xs5 sm2 md2 pl-9>
             <sidebarMenu />
           </v-flex>
-          
-          <v-flex xs12 sm10 md10 pl-12 pr-9>
-            <blockquote class="blockquote">
-                Work In Progress . . .  Please check back later . . .
-            </blockquote>
+
+          <v-flex xs12 sm10 md10 pr-9>
+            <v-layout row justify-center>
+              <skillsInfo></skillsInfo>
+            </v-layout>
           </v-flex>
         </v-layout>
       </v-flex>
 
-      <v-flex xs2 align-self-sm-end class="social-link-list"><socialLink /></v-flex>
+      <v-flex xs2 align-self-sm-end class="social-link-list"
+        ><socialLink
+      /></v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -35,13 +37,15 @@
 <script>
 import socialLink from "./socialLink";
 import sidebarMenu from "./sidebarMenu";
+import skillsInfo from "../helpers/skillsInfo";
 
 export default {
   name: "SkillsPage",
   components: {
-      socialLink,
-      sidebarMenu
+    socialLink,
+    sidebarMenu,
+    skillsInfo,
   },
-  data: () => ({})
+  data: () => ({}),
 };
 </script>

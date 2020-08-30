@@ -18,12 +18,7 @@
           <v-flex xs5 sm2 md2 pl-9>
             <sidebarMenu />
           </v-flex>
-          <v-flex xs12 sm10 md10 pl-12 pr-9 pt-5>
-            <h1>Developer. Designer.<span class="artist"> Artist.</span></h1>
-            <blockquote class="blockquote">
-              Please check back later for more info . . .
-            </blockquote>
-          </v-flex>
+          <aboutInfo></aboutInfo>
         </v-layout>
       </v-flex>
 
@@ -37,12 +32,14 @@
 <script>
 import socialLink from "./socialLink";
 import sidebarMenu from "./sidebarMenu";
+import aboutInfo from "../helpers/aboutInfo";
 
 export default {
   name: "AboutPage",
   components: {
     socialLink,
     sidebarMenu,
+    aboutInfo,
   },
   data: () => ({}),
 };
