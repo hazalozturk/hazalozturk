@@ -9,13 +9,14 @@
         >
           <v-list-item-icon>
             <v-btn
+              :aria-label="icon.title"
               :href="icon.href"
               fab
               class="subheading"
               target="_blank"
               small
             >
-              <v-icon>mdi-{{ icon.title }}</v-icon>
+              <v-icon :aria-label="icon.title">mdi-{{ icon.title }}</v-icon>
             </v-btn>
           </v-list-item-icon>
           <v-list-item-action-text></v-list-item-action-text>

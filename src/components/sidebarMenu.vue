@@ -7,8 +7,7 @@
             <v-btn
               dark
               color="#EC7580"
-              font="white"
-              class="subheading mx-3 px-3"
+              class="subheading mx-3 px-3 button-text"
               target="_blank"
               elevation="20"
               x-large
@@ -49,3 +48,8 @@ export default {
   }),
 };
 </script>
+<style>
+.button-text{
+  color: #323232 !important
+}
+</style>
