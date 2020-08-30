@@ -1,8 +1,3 @@
-const pages = ["Home", "About", "Skills"];
-const links = ["mdi-github", "mdi-linkedin", "mdi-twitter",
-               "mdi-pencil", "mdi-codepen", "mdi-instagram", 
-               "mdi-camera"]
-
 describe('Social Links Tests', function() {
     it('Visits homepage', function() {
       cy.visit('/');
@@ -10,50 +5,50 @@ describe('Social Links Tests', function() {
 });
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits github', function() {
         cy.visit('/');
         cy.get('.mdi-github').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits linkedin', function() {
         cy.visit('/');
         cy.get('.mdi-linkedin').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits twitter', function() {
         cy.visit('/');
         cy.get('.mdi-twitter').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits codepen', function() {
         cy.visit('/');
         cy.get('.mdi-codepen').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits dribbble', function() {
         cy.visit('/');
-        cy.get('.mdi-pencil').click() /// dribbble
+        cy.get('.mdi-pencil').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits instagram', function() {
         cy.visit('/');
         cy.get('.mdi-instagram').click()
     })
 })
 
 describe('Social Links Tests', function () {
-    it('Visits homepage', function() {
+    it('Visits gurushots', function() {
         cy.visit('/');
-        cy.get('.mdi-camera').click() /// Gurushots
+        cy.get('.mdi-camera').click()
     })
 })
