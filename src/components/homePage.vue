@@ -1,38 +1,41 @@
 <template>
-  <v-container fluid pt-0>
-    <v-layout row>
-      <v-flex xs10>
-        <v-layout row>
-          <v-flex xs10 mx-9 pl-sm-5>
-            <v-img
-              :src="require('../assets/name.png?lazy')"
-              class="float-left name-image"
-              contain
-              width="650"
-              alt="Hazal Ozturk name with a irregular shaped background"
-            ></v-img>
-          </v-flex>
-        </v-layout>
-
-        <v-layout row>
-          <v-flex xs5 sm2 md2 pl-9>
-            <sidebarMenu />
-          </v-flex>
-
-          <v-flex xs12 sm10 md10>
+  <v-container fluid>
+    <v-row class="px-10">
+      <v-col cols="10">
+        <v-row>
+          <v-col cols="10" class="name-title text-left ml-12">
+            Hi. I'm Hazal Ozturk.
+          </v-col>
+        </v-row>
+        <v-row class="mt-10">
+          <v-col cols="4">
+            <div id="rotate-container">
+              I am a(n)
+              <div id="rotate-wrapper">
+                <div><div class="artist">Artist.</div></div>
+                <div><div>UI Designer.</div></div>
+                <div><div>Front End Developer.</div></div>
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="8">
             <v-img
               :src="require('../assets/art-dev-design.png?lazy')"
-              class="float-right"
               contain
               height="300"
               alt="female illustration"
             ></v-img>
-          </v-flex>
-        </v-layout>
-      </v-flex>
-
-      <v-flex xs2 align-self-sm-end class="social-link-list"><socialLink /></v-flex>
-    </v-layout>
+          </v-col>
+        </v-row>
+        <v-col cols="12" class="text-left ml-10">
+          <aboutInfo />
+        </v-col>
+        <v-col cols="12" class="text-left ml-10">
+          <skills-info />
+        </v-col>
+      </v-col>
+      <v-col class="social-link-list" cols="2"><socialLink /></v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -46,16 +49,18 @@
 
 <script>
 import socialLink from "./socialLink";
-import sidebarMenu from "./sidebarMenu";
+import aboutInfo from "../helpers/aboutInfo";
+import skillsInfo from "../helpers/skillsInfo";
 
 export default {
   name: "homePage",
   components: {
     socialLink,
-    sidebarMenu
+    aboutInfo,
+    skillsInfo,
   },
   data: () => ({
     //
-  })
+  }),
 };
 </script>
