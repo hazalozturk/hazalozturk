@@ -5,7 +5,6 @@
       <v-row align="center" v-for="(skill, index) in skills" :key="index">
         <v-col cols="1"
           ><v-progress-circular
-            class="foo"
             :size="50"
             :value="skill.percent"
             :color="skill.color"
