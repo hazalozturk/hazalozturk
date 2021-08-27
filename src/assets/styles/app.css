@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:700");
 
+/* Animation related styles */
 body {
     margin: 0px;
     font-family: "Roboto";
@@ -69,6 +70,7 @@ body {
         margin-top: -270px;
     }
 }
+/* Animation related styles end */
 
 .name-title {
     font-size: 56px;
@@ -82,8 +84,26 @@ body {
     font-family: "Shadows Into Light", cursive;
 }
 
+.side-list {
+    width: 30%;
+}
+
 @media only screen and (max-width: 815px) {
     .name-title {
         font-size: 36px;
+    }
+    .side-list {
+        width: 150%;
+    }
+    #rotate-container {
+        font-size: 16px;
+        width: 80%;
+    }
+    #rotate-wrapper > div > div {
+        height: 65px;
+        padding: 10px 10px;
+    }
+    #rotate-wrapper {
+        height: 35px;
     }
 }

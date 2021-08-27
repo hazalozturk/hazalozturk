@@ -11,7 +11,7 @@
             >%{{ skill.percent }}</v-progress-circular
           ></v-col
         >
-        <v-col cols="11" class="pl-7">{{ skill.title }}</v-col>
+        <v-col cols="11" class="pl-sm-7 pl-12">{{ skill.title }}</v-col>
       </v-row>
     </blockquote>
   </v-row>

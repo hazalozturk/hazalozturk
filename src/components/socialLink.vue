@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-end>
-    <v-list flat color="transparent">
+    <v-list flat color="transparent" class="side-list">
       <v-list-item-group>
         <v-list-item
           class="px-0"

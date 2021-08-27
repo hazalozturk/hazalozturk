@@ -1,13 +1,13 @@
 <template>
   <v-container fluid>
-    <v-row class="px-10">
+    <v-row class="px-md-10 px-2">
       <v-col cols="10">
         <v-row>
-          <v-col cols="10" class="name-title text-left ml-12">
+          <v-col cols="10" sm="12" class="name-title text-left ml-md-12">
             Hi. I'm Hazal Ozturk.
           </v-col>
         </v-row>
-        <v-row class="mt-10">
+        <v-row class="mt-md-10">
           <v-col cols="4">
             <div id="rotate-container">
               I am a(n)
@@ -27,10 +27,10 @@
             ></v-img>
           </v-col>
         </v-row>
-        <v-col cols="12" class="text-left ml-10">
+        <v-col cols="12" class="text-left ml-md-10">
           <aboutInfo />
         </v-col>
-        <v-col cols="12" class="text-left ml-10">
+        <v-col cols="12" class="text-left ml-md-10">
           <skills-info />
         </v-col>
       </v-col>
@@ -38,14 +38,6 @@
     </v-row>
   </v-container>
 </template>
-
-<style>
-@media only screen and (max-width: 600px) {
-  .social-link-list {
-    padding-top: 30%;
-  }
-}
-</style>
 
 <script>
 import socialLink from "./socialLink";
