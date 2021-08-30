@@ -13,7 +13,7 @@
       </p>
       <p>
         I also have created many exhibition flyers, designed many ads,
-        maintaiened couple social media campaigns and I have been proudly
+        maintained couple social media campaigns and I have been proudly
         serving as a board member for Albany Center Gallery.
       </p>
       <p>
