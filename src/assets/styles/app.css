@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+/* Animation related styles */
+body {
+    margin: 0px;
+    font-family: "Roboto";
+    text-align: center;
+    color: #2b2b2b;
+}
+
+#rotate-container {
+    font-size: 36px;
+    position: absolute;
+    width: 100%;
+    right: 25%;
+    display: block;
+}
+
+#rotate-wrapper {
+    height: 60px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+#rotate-wrapper > div > div {
+    color: #2b2b2b;
+    padding: 4px 15px;
+    height: 55px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+#rotate-wrapper div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#rotate-wrapper div div {
+    background: #4c998e;
+}
+#rotate-wrapper div:first-child div {
+    background: #f4ac79;
+}
+#rotate-wrapper div:last-child div {
+    background: #ec7580;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+/* Animation related styles end */
+
+.name-title {
+    font-size: 56px;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.artist {
+    font-family: "Shadows Into Light", cursive;
+}
+
+.side-list {
+    width: 30%;
+}
+
+@media only screen and (max-width: 815px) {
+    .name-title {
+        font-size: 36px;
+    }
+    .side-list {
+        width: 150%;
+    }
+    #rotate-container {
+        font-size: 16px;
+        width: 80%;
+    }
+    #rotate-wrapper > div > div {
+        height: 65px;
+        padding: 10px 10px;
+    }
+    #rotate-wrapper {
+        height: 35px;
+    }
+}

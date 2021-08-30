@@ -1,9 +1,9 @@
 <template>
-  <v-flex xs12 sm10 md10 pl-15 pr-9 pt-5>
-    <blockquote class="blockquote">
-      <h1>My Expertise:</h1>
+  <v-row>
+    <blockquote>
+      <h2>My Expertise:</h2>
       <v-row align="center" v-for="(skill, index) in skills" :key="index">
-        <v-col lg="1" md="2" sm="3"
+        <v-col cols="1"
           ><v-progress-circular
             :size="50"
             :value="skill.percent"
@@ -11,10 +11,10 @@
             >%{{ skill.percent }}</v-progress-circular
           ></v-col
         >
-        <v-col lg="11" md="10" sm="9">{{ skill.title }}</v-col>
+        <v-col cols="11" class="pl-sm-7 pl-12">{{ skill.title }}</v-col>
       </v-row>
     </blockquote>
-  </v-flex>
+  </v-row>
 </template>
 
 <script>
@@ -23,23 +23,24 @@ export default {
   data: () => ({
     skills: [
       {
-        title: "CSS, HTML, JS, Responsive Web Design, Mobile App Development",
-        color: "#095c43",
+        title:
+          "CSS, HTML, JS, Responsive Web Design, Mobile App Development, Art",
+        color: "#008073",
         percent: 95,
       },
       {
-        title: "Git, NodeJS, Webpack, React, React Native, Vue, Wordpress, Figma",
-        color: "#8a390d",
+        title: "Git, Webpack, React, React Native, Vue, Figma",
+        color: "#9C27B0",
         percent: 75,
       },
       {
-        title: "Docker, Laravel, Sentry, Github Actions, UI/UX Design",
-        color: "#375d87",
+        title: "Sentry, Github Actions, NodeJS, UI/UX Design, Adobe Suite",
+        color: "#0D47A1",
         percent: 35,
       },
       {
-        title: "Animejs, SVG Animations",
-        color: "#5c626d",
+        title: "Animejs, SVG Animations, cypress",
+        color: "#2E7D32",
         percent: 15,
       },
     ],
