@@ -14,7 +14,7 @@
               <div id="rotate-wrapper">
                 <div><div class="artist">Artist.</div></div>
                 <div><div>UI Designer.</div></div>
-                <div><div>Front End Developer.</div></div>
+                <div><div>Front-End Developer.</div></div>
               </div>
             </div>
           </v-col>
