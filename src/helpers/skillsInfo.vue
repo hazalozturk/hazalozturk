@@ -1,10 +1,11 @@
 <template>
   <v-row>
     <blockquote>
-      <h2>My Expertise:</h2>
+      <h2 class="pb-4">My Expertise:</h2>
       <v-row align="center" v-for="(skill, index) in skills" :key="index">
         <v-col cols="1"
           ><v-progress-circular
+            class="progress-circle"
             :size="50"
             :value="skill.percent"
             :color="skill.color"
@@ -25,22 +26,22 @@ export default {
       {
         title:
           "CSS, HTML, JS, Responsive Web Design, Mobile App Development, Art",
-        color: "#008073",
+        color: "#8BC6C6",
         percent: 95,
       },
       {
         title: "Git, Webpack, React, React Native, Vue, Figma",
-        color: "#9C27B0",
+        color: "#EC7480",
         percent: 75,
       },
       {
         title: "Sentry, Github Actions, NodeJS, UI/UX Design, Adobe Suite",
-        color: "#0D47A1",
+        color: "#F3AC79",
         percent: 35,
       },
       {
         title: "Animejs, SVG Animations, cypress",
-        color: "#2E7D32",
+        color: "#AFBCD0",
         percent: 15,
       },
     ],
