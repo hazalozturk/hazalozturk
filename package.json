@@ -15,7 +15,7 @@
     "node-forge": "^0.10.0",
     "vue": "2.6.10",
     "vue-router": "3.5.2",
-    "vuetify": "2.5.8",
+    "vuetify": "2.6.10",
     "yarn": "1.22.11"
   },
   "devDependencies": {
